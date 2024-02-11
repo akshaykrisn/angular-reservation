@@ -1,0 +1,34 @@
+ <form [formGroup]="reservationForm" (ngSubmit)="onSubmit()">
+
+    <div>
+        <label>Check-In Date</label>
+        <!-- Important: formControlName to get the value in the TS -->
+        <input type="date" formControlName="checkInDate">
+    </div>
+
+    <div>
+        <label>Check-Out Date</label>
+        <!-- Important: formControlName to get the value in the TS -->
+        <input type="date" formControlName="checkOutDate">
+    </div>
+
+    <div>
+        <label>Guest Name</label>
+        <!-- Important: formControlName to get the value in the TS -->
+        <input type="text" formControlName="guestName">
+    </div>
+
+    <div>
+        <label>Email</label>
+        <!-- Important: formControlName to get the value in the TS -->
+        <input type="email" formControlName="guestEmail">
+    </div>
+
+    <div>
+        <label>Room Number</label>
+        <!-- Important: formControlName to get the value in the TS -->
+        <input type="number" formControlName="roomNumber">
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
